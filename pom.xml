@@ -67,6 +67,7 @@
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat9-maven-plugin</artifactId>
 				<version>3.0.1</version>
+				<packaging>war</packaging>
 				<configuration>
 					 <url>http://localhost:8090/manager/text</url>
 					 <path>MyCalc</path>
