@@ -15,6 +15,7 @@
 			<artifactId>junit</artifactId>
 			<version>4.13</version>
 			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-war-plugin</artifactId>
