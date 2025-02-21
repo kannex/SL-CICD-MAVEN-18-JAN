@@ -3,6 +3,7 @@
 	<groupId>sl.jan18.cicd</groupId>
 	<artifactId>sl.jan18.cicd</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -50,7 +51,6 @@
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat9-maven-plugin</artifactId>
 				<version>3.0.1</version>
-				<type>war</type>
 				<configuration>
 					 <url>http://localhost:8090/manager/text</url>
 					 <path>webapp</path>
