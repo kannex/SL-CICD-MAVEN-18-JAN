@@ -18,6 +18,21 @@
 			<version>4.13</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat -->
+                <dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat</artifactId>
+			<version>9.0.0.M1</version>
+			<type>pom</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-war-plugin</artifactId>
+			<version>3.4.0</version>
+			<type>maven-plugin</type>
+		</dependency>
+
 
 
 	</dependencies>
@@ -42,6 +57,13 @@
 					</archive>
 				</configuration>
 			</plugin>
+			<!-- https://mvnrepository.com/artifact/org.opoo.maven/tomcat9-maven-plugin -->
+                        <plugin>
+				<groupId>org.opoo.maven</groupId>
+				<artifactId>tomcat9-maven-plugin</artifactId>
+				<version>3.0.1</version>
+			</plugin>
+
 		</plugins>
 
 	</build>
