@@ -15,15 +15,6 @@
 			<artifactId>junit</artifactId>
 			<version>4.13</version>
 			<scope>test</scope>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat -->
-                <dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat</artifactId>
-			<version>9.0.0.M1</version>
-			<type>pom</type>
-			<scope>provided</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-war-plugin</artifactId>
@@ -52,13 +43,7 @@
 						</manifest>
 					</archive>
 				</configuration>
-			</plugin>
-			<!-- https://mvnrepository.com/artifact/org.opoo.maven/tomcat9-maven-plugin -->
-                        <plugin>
-				<groupId>org.opoo.maven</groupId>
-				<artifactId>tomcat9-maven-plugin</artifactId>
-				<version>3.0.1</version>
-			</plugin>
+			
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat9-maven-plugin</artifactId>
@@ -66,7 +51,7 @@
 				<packaging>war</packaging>
 				<configuration>
 					 <url>http://localhost:8090/manager/text</url>
-					 <path>MyCalc</path>
+					 <path>webapp</path>
 					 <server>Tomcat</server>
 				  
 				</configuration>
